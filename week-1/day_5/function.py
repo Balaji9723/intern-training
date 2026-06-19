@@ -3,9 +3,14 @@
 contact_result=  {}
 
 def add_contact():
-    name = input("enter name:")
-    mobile_no= input("enter mobile number:")
-    contact_result[name] = mobile_no
+    
+    try:
+        name = input("enter name:")
+        mobile_no= int(input("enter mobile number:"))
+        contact_result[name] = mobile_no
+    except ValueError:
+        print("Value is not correct")
+
 
     print("\n result successful")
 
@@ -13,10 +18,11 @@ def add_contact():
 def find_contact():
     name = input("search a Name")
 
-    if name in contact_result:
+    try:
         print(contact_result[name])
-    else :
-        print ("No contacts")
+    except KeyError as e:
+        print("Contact is not founded",e)
+    
 
 def list_contact():
      if len(contact_result) == 0:
@@ -50,10 +56,6 @@ while True:
         
     else :
         print ("\n Invalid ")
-
-
-
-
 
 
 # a To-Do List stored in a list with add_task(), remove_task(), and show_tasks() functions.
