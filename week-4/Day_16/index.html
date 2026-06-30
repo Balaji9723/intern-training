@@ -1,0 +1,137 @@
+<!-- Inline css -->
+
+<!-- <h1 style="color: aquamarine; background-color: coral;"> Welcome</h1>
+<h1 style="color:darkmagenta; background-color:moccasin;"> Welcome</h1>
+<h1 style="color:darkslateblue; background-color:sandybrown;"> Welcome</h1> -->
+
+
+
+<!-- Internal css -->
+<!-- <style>
+    h1{
+        color: aqua;
+    }
+    p{
+        color:chartreuse;
+    }
+</style>
+
+<h1> Heading </h1>
+<p> Paragraph </p> -->
+
+
+<!-- <style>
+    div{
+        background-color: antiquewhite;
+        height: 100px;
+        width: 300px;
+    }
+</style>
+
+<div>
+    <h1 style="color: black;">Hello</h1>
+    <p style="color: darkblue;">Welcome</p>
+</div> -->
+
+
+<!-- External css -->
+<!-- <link rel="stylesheet" href="Style.css">
+<h1>Heading</h1> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Balaji T G</h1>
+        <p>Python | FastAPI Learner </p>
+       <a href="https://www.linkedin.com/feed/">Linked IN</a>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section class="about">
+
+            <img src="image.png" alt="Profile Picture">
+
+            <div class="about-text">
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! I'm Balaji, an aspiring Python Backend Developer.
+                    I enjoy building web applications using Python, FastAPI,
+                    SQLAlchemy, and PostgreSQL. I am also learning Cloud and
+                    DevOps technologies to become a full-stack backend engineer.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            @ 2026 Balaji TG | All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+</html>
